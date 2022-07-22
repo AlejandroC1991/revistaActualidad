@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"path": "../index"
+		},
+		{
+			"path": "../multimedia"
+		},
+		{
+			"path": "../sections"
+		},
+		{
+			"path": "."
+		},
+		{
+			"path": "../images"
+		}
+	]
+}

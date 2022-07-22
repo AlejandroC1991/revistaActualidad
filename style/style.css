@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300&family=Oooh+Baby&family=Poppins:wght@600&family=Roboto:wght@100&family=Sedgwick+Ave&display=swap');
+/*mobile first*/
+*{
+    padding: 0;
+    margin:0;
+    
+}
+
+body{
+    text-align: center;
+    font-family: 'Poppins',sans-serif;
+    font-weight: bolder;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: lightgray;
+    
+}
+
+header{
+    background-color: lightslategray;
+    padding: .5rem;
+    
+}
+
+h1 {
+    color: black;
+    justify-content: center;
+    
+   
+}
+
+h2{
+    color: black;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+li{
+    border: 1px solid black;
+}
+
+nav ul{
+    
+    border: 1px solid black;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 4rem;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    margin: 1rem;
+}
+
+footer{
+    padding: 3em;
+    background-color: lightgray;
+    
+    margin-bottom: 0;
+}
+.flex-itemsInicio{
+    background-color: white;
+    border: 5px solid black;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: lightgray;
+}
+
+.contenido{
+    display: flex;
+    justify-content: center;
+    }
+    
+  
+img.icon {
+    width: 4rem;
+    height: 3rem;
+}
+article iframe {
+    border: 5px solid black;
+    
+}
+article img {
+    border: 5px solid black;
+    
+}
+.formulario {
+    background-color: lightgray;
+}
+
+.transicion {
+    color: black;
+    
+}
+
+.transicion1 {
+   transition: all 3s;
+}
+.transicion:hover{
+    transform: scale(2);
+}
+
+.img-bitcoin{
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    margin-bottom: 2rem;
+    
+}
+.imagen-bitcoin{
+    display: flex;
+    justify-content: center;
+}
+.img-bitcoin:hover{
+    animation: bitcoin 4s;
+}
+
+@keyframes bitcoin{
+    0%{
+        
+        transform: rotate(0deg);
+    }    
+    25%{
+        
+        transform: rotate(90deg);
+    }
+    50%{
+        
+        transform: rotate(180deg);
+    }
+    75%{
+        
+        transform: rotate(270deg);
+
+    }
+    100%{
+        
+        transform: rotate(360deg);
+
+    }
+}
+/*declar el área de grilla*/
+
+header{
+    grid-area: header;
+}
+
+.contenido{
+    grid-area: contenido;
+}
+nav{
+    grid-area: nav
+}
+
+
+.galeria-grid{
+    grid-area: galeria;
+}
+footer{
+    grid-area: footer;
+}
+
+
+
+/*empiezo a acomodar área*/
+
+.envoltura{
+    background-color: lightgray;
+    display: grid;
+    gap:20px;
+    grid-template-areas: 
+    "header"
+    "nav"
+    "contenido"
+    "galeria"
+    "footer";
+}
+
+.padre{
+    background-color: lightgray;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap:15px;
+    justify-items:center;
+}
+
+
+iframe, img{
+    width: 300px;
+    height: 250px;
+    margin-top: 15px;
+}
+
+
+
+@media (min-width:500px){
+    .envoltura{
+        margin: 0;
+        grid-template-areas: 
+        "header header"
+        "nav nav"
+        "contenido contenido"
+        "galeria galeria"
+        "footer footer";
+        
+        
+    }
+   
+    nav ul{
+        font-display: flex;
+        flex-direction: column;
+        
+    }
+   
+    
+
+    iframe, img{
+        width: 250px;
+        height: 200px;
+    }
+
+    .padre{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap:15px;
+        justify-items:center;
+        
+    }
+    .galeria-grid{
+        background-color: black;
+    }
+    footer{
+        margin-top: 0
+    };
+}
+
+@media (min-width:768px){
+    .envoltura{
+         background-color: lightgray;
+         display: grid;
+         gap:20px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "header header header"
+        "nav nav nav"
+        "contenido contenido contenido"
+        "galeria galeria galeria"
+        "footer footer footer";
+    }
+    nav ul{
+        display: flex;
+        flex-direction: row;
+        
+    }
+   
+    h1{
+        
+    display: flex;
+    justify-content: center;
+    }
+    li{
+    width: 100%;
+    
+}
+
+
+    .padre{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap:15px;
+        justify-items:center;
+    }
+
+    iframe, img{
+    
+        width: 200px;
+        height: 150px;
+    }
+
+   
+}
+
+@media(min-width:1024px){
+    
+
+    iframe, img{
+        width: 300px;
+        height: 225px;
+        
+    }
+}
+
+
+
+
+

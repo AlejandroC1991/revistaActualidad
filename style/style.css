@@ -19,7 +19,7 @@ body{
 
 header{
     background-color: lightslategray;
-    padding: .5rem;
+    
     
 }
 
@@ -38,24 +38,19 @@ nav ul {
     list-style-type: none;
     display: flex;
     flex-direction: column;
+    padding: 0;
+    margin: 0;
+    
     
 }
 
-
-li{
-    border: 1px solid black;
-}
-
-nav ul{
-    
-    border: 1px solid black;
-}
 
 li {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 4rem;
+    
 }
 
 a{
@@ -101,7 +96,17 @@ article img {
 }
 .formulario {
     background-color: lightgray;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
 }
+@media (min-width:400px){
+    .formulario{
+        width: 50%;
+    
+    }
+}
+
 
 .transicion {
     color: black;
@@ -129,6 +134,19 @@ article img {
 .img-bitcoin:hover{
     animation: bitcoin 4s;
 }
+
+.fondoNav {
+    background-color: lightslategray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+   
+}
+
+
+
 
 @keyframes bitcoin{
     0%{
@@ -209,7 +227,7 @@ iframe, img{
 
 
 
-@media (min-width:500px){
+@media (min-width:628px){
     .envoltura{
         margin: 0;
         grid-template-areas: 
@@ -296,7 +314,7 @@ iframe, img{
    
 }
 
-@media(min-width:1024px){
+@media(min-width:1091px){
     
 
     iframe, img{

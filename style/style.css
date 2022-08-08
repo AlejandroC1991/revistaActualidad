@@ -181,9 +181,7 @@ header{
 .contenido{
     grid-area: contenido;
 }
-nav{
-    grid-area: nav
-}
+
 
 
 .galeria-grid{
@@ -203,7 +201,6 @@ footer{
     gap:20px;
     grid-template-areas: 
     "header"
-    "nav"
     "contenido"
     "galeria"
     "footer";
@@ -232,7 +229,6 @@ iframe, img{
         margin: 0;
         grid-template-areas: 
         "header header"
-        "nav nav"
         "contenido contenido"
         "galeria galeria"
         "footer footer";
@@ -276,7 +272,6 @@ iframe, img{
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-areas: 
         "header header header"
-        "nav nav nav"
         "contenido contenido contenido"
         "galeria galeria galeria"
         "footer footer footer";

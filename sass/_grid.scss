@@ -1,0 +1,45 @@
+
+/*declara el área de grilla*/
+
+header{
+    grid-area: header;
+}
+
+.contenido{
+    grid-area: contenido;
+}
+
+
+
+.galeria-grid{
+    grid-area: galeria;
+}
+footer{
+    grid-area: footer;
+}
+
+
+
+/*empiezo a acomodar área*/
+
+.envoltura{
+    background-color: $background;
+    display: grid;
+    gap:20px;
+    grid-template-areas: 
+    "header"
+    "contenido"
+    "galeria"
+    "footer";
+}
+
+.padre{
+    background-color: $background;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap:15px;
+    justify-items:center;
+}
+
+

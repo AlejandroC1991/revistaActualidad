@@ -1,0 +1,54 @@
+
+.transicion {
+    color: black;
+    
+}
+
+.transicion1 {
+   transition: all 3s;
+}
+.transicion:hover{
+    transform: scale(2);
+}
+
+.img-bitcoin{
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    margin-bottom: 2rem;
+    
+}
+.imagen-bitcoin{
+    display: flex;
+    justify-content: center;
+}
+.img-bitcoin:hover{
+    animation: bitcoin 4s;
+}
+
+
+
+@keyframes bitcoin{
+    0%{
+        
+        transform: rotate(0deg);
+    }    
+    25%{
+        
+        transform: rotate(90deg);
+    }
+    50%{
+        
+        transform: rotate(180deg);
+    }
+    75%{
+        
+        transform: rotate(270deg);
+
+    }
+    100%{
+        
+        transform: rotate(360deg);
+
+    }
+}

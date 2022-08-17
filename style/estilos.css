@@ -76,6 +76,10 @@ header nav ul li a {
           justify-content: center;
 }
 
+.copyright {
+  margin-top: 20px;
+}
+
 footer {
   padding: 3em;
   background-color: lightgray;
@@ -266,7 +270,10 @@ iframe, img {
   margin-right: auto;
 }
 
-/*mobile first*/
+.espaciosFormulario {
+  margin-bottom: 40px;
+}
+
 @media (min-width: 400px) {
   .formulario {
     width: 50%;
@@ -355,4 +362,6 @@ iframe, img {
     height: 225px;
   }
 }
+
+/*mobile first*/
 /*# sourceMappingURL=estilos.css.map */

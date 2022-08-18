@@ -31,6 +31,7 @@ h2 {
   color: black;
   margin-top: 15px;
   margin-bottom: 15px;
+  font-size: 1.5rem;
 }
 
 header {
@@ -165,6 +166,7 @@ footer {
       -ms-flex-align: center;
           align-items: center;
   background-color: lightgray;
+  border-radius: .5rem;
 }
 
 article iframe, article img {
@@ -175,11 +177,13 @@ iframe, img {
   width: 300px;
   height: 250px;
   margin-top: 15px;
+  border-radius: .5rem;
 }
 
 .redSocial, .icon {
   border: 3px solid black;
   padding: 3px;
+  border-radius: .5rem;
 }
 
 img.icon {

@@ -1,7 +1,4 @@
-img.icon {
-    width: 4rem;
-    height: 3rem;
-}
+
 article iframe, article img {
     border: 5px solid black;
     
@@ -12,4 +9,24 @@ iframe, img{
     width: 300px;
     height: 250px;
     margin-top: 15px;
+}
+
+
+.redSocial {
+    border: 3px solid black;
+    padding: 3px
+}
+
+.icon {
+    @extend .redSocial;
+}
+
+
+@mixin sizes ($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+img.icon{
+    @include sizes (4rem,3rem);
 }

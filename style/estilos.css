@@ -165,11 +165,6 @@ footer {
   background-color: lightgray;
 }
 
-img.icon {
-  width: 4rem;
-  height: 3rem;
-}
-
 article iframe, article img {
   border: 5px solid black;
 }
@@ -178,6 +173,16 @@ iframe, img {
   width: 300px;
   height: 250px;
   margin-top: 15px;
+}
+
+.redSocial, .icon {
+  border: 3px solid black;
+  padding: 3px;
+}
+
+img.icon {
+  width: 4rem;
+  height: 3rem;
 }
 
 .transicion {

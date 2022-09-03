@@ -1,30 +1,33 @@
 
 .transicion {
     color: black;
-    
+    transition: all 3s;
+
+    &:hover{
+        transform: scale(2);
+    }
 }
 
-.transicion1 {
-   transition: all 3s;
-}
-.transicion:hover{
-    transform: scale(2);
-}
 
-.img-bitcoin{
-    width: 5rem;
-    height: 5rem;
-    display: flex;
-    margin-bottom: 2rem;
-    
-}
 .imagen-bitcoin{
     display: flex;
     justify-content: center;
+
+    .img-bitcoin{
+        width: 5rem;
+        height: 5rem;
+        display: flex;
+        margin-bottom: 2rem;
+    
+        &:hover{
+            animation: bitcoin 8s;
+            
+        
+        }
+        
+    }
 }
-.img-bitcoin:hover{
-    animation: bitcoin 4s;
-}
+
 
 
 

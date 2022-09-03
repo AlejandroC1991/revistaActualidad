@@ -151,7 +151,7 @@ footer {
 }
 
 .flex-itemsInicio {
-  background-color: white;
+  background-color: #EEEEEE;
   border: 5px solid black;
   margin: 10px;
   padding: 10px;
@@ -165,7 +165,6 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: lightgray;
   border-radius: .5rem;
 }
 
@@ -193,9 +192,6 @@ img.icon {
 
 .transicion {
   color: black;
-}
-
-.transicion1 {
   -webkit-transition: all 3s;
   transition: all 3s;
 }
@@ -203,15 +199,6 @@ img.icon {
 .transicion:hover {
   -webkit-transform: scale(2);
           transform: scale(2);
-}
-
-.img-bitcoin {
-  width: 5rem;
-  height: 5rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-bottom: 2rem;
 }
 
 .imagen-bitcoin {
@@ -223,9 +210,18 @@ img.icon {
           justify-content: center;
 }
 
-.img-bitcoin:hover {
-  -webkit-animation: bitcoin 4s;
-          animation: bitcoin 4s;
+.imagen-bitcoin .img-bitcoin {
+  width: 5rem;
+  height: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 2rem;
+}
+
+.imagen-bitcoin .img-bitcoin:hover {
+  -webkit-animation: bitcoin 8s;
+          animation: bitcoin 8s;
 }
 
 @-webkit-keyframes bitcoin {
